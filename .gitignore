@@ -1,31 +1,24 @@
-# Dataset
-data/
-
-# Trained models
-models/
-
-# Python cache
 __pycache__/
-*.py[cod]
-*$py.class
+*.pyc
+.DS_Store
+.backup/
+report/
+*.tiff
 
-# Virtual environments
-venv/
-.venv/
-env/
+data/raw/
+data/processed/*.npz
+!data/processed/niqe_pristine.npz
+data/external/*
+!data/external/web_examples/
 
-# VS Code
-.vscode/
+checkpoints/*
+!checkpoints/meghgan_liss4.pt
+!checkpoints/meghgan_real.pt
+!checkpoints/diffusion_real.pt
+!checkpoints/unet.pt
+!checkpoints/meghgan_opt.pt
 
-# Environment variables
-.cloudenv
-.env
+results/scenes/
 
-# Logs
-*.log
-
-# Jupyter
-.ipynb_checkpoints/
-
-# Large data files
-*.zip
+MeghMukt_Test_Images/Test1_*
+MeghMukt_Test_Images/Test2_*
