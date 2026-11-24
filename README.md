@@ -59,6 +59,12 @@ the whole image, and training with slightly wrong masks and shifted references. 
 
 Details in `results/optimisation_summary.md`.
 
+## Live dashboard
+
+[Open MeghMukt on Streamlit Community Cloud](https://awbgqb3lbthslzjcuuzylh.streamlit.app/). The deployment runs `app.py` from `main`.
+
+The hosted smoke test ran MeghGAN on the bundled 512 × 512 JPG. It rebuilt 26% of the image in 165 seconds, displayed the confidence map, and produced both `meghmukt_result.png` and `meghmukt_result.tif` downloads. The JPG had no map coordinates, so GeoTIFF geographic alignment was outside this test.
+
 ## Running it
 
 Python 3.10+ should work (we used 3.13 on a MacBook Air M4).
